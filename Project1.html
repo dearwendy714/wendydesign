@@ -23,7 +23,7 @@
                 /* Greenish */
                 border: none;
                 color: #ffffff;
-                padding: 16px 32px;
+                padding: 16px 3 12px;
                 text-align: center;
                 text-decoration: none;
                 display: inline-block;
@@ -33,15 +33,17 @@
                 /* Safari */
                 transition-duration: 0.4s;
                 cursor: pointer;
-            }  
+            }
+            
             .proj-display{
                 position: absolute;
-                height: 100%;
-                width: 80%;
-                opacity: 0;
+                width: 70vw;
+                /* opacity: 0; */
+                display:none;
             }
             .proj-show{
-                opacity: 1 !important;
+                /* opacity: 1 !important; */
+                display: block;
             }
             .button1 {
                 background-color: white;
@@ -66,8 +68,8 @@
     </head>
 
 
-    <body>
-
+    <body onLoad="openProject(1);">
+ 
         <div id="site-content">
 
             <header class="site-header">
@@ -135,7 +137,7 @@
                         <h2 class="entry-title">UX/UI Portfolio Design Process</h2>
 
                         <!-- subheading UX UI -->
-                        <div>
+                        <div >
                             <button onClick="openProject(1);"
                                 class="button button1" id="proj-1--button">Project 1</button>
                             <button onClick="openProject(2);"
@@ -145,27 +147,25 @@
 
                             <div>
                             </div>
-                            <figure class="block" style="height: 700px;">
+                            <figure class="block" style="height: 270vw;">
                                 <div id="proj-1--display" class="proj-display">
-                                    <h3>fsdghfjg</h3>
-                                    <img src="Project1/Mockup1.png" height="900"
+                                    <h3>Project 1</h3>
+                                    <img src="Project1/Mockup1.png" style="height: auto; width: 80vw;"
                                         alt="wireframe">
 
                                     <h3>Wireframe Option 02</h3>
-                                    <img src="Project1/Mockup2.png" height="1200"
+                                    <img src="Project1/Mockup2.png" style="height: auto; width: 80vw;"
                                         alt="wireframe">
-
-
                                     <hr>
                                     <h4>Refined UX Web Design</h4>
                                     <img src="Project1/images/Wendy_Chen2018Finalweb.jpg"
-                                        height="1200" alt="">
+                                    style="height: auto; width: 80vw;" alt="">
 
                                     <h4>Refined UX Mobile Design</h4>
-                                    <img src="Project1/Chen_UX_Mobile.png" height="1200"
+                                    <img src="Project1/Chen_UX_Mobile.png" style="height: auto; width: 80vw;"
                                         alt="wireframe">
                                 </div>
-                                <div id="proj-2--display" class="proj-display">
+                                <div id="proj-2--display" class="proj-display" onClick="window.open('/Project2.html')">
                                     <h3>flim flam</h3>
                                     <img src="Project1/Mockup1.png" height="900"
                                         alt="wireframe">
@@ -184,7 +184,7 @@
                                     <img src="Project1/Chen_UX_Mobile.png" height="1200"
                                         alt="wireframe">
                                 </div>
-                                <div id="proj-3--display" class="proj-display">
+                                <div id="proj-3--display" class="proj-display" onClick="window.open('/Project3.html')">
                                     <h3>blueluberli</h3>
                                     <img src="Project1/Mockup1.png" height="900"
                                         alt="wireframe">
